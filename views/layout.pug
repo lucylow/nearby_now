@@ -1,0 +1,92 @@
+//- Copyright 2019 Square Inc.
+ 
+//- Licensed under the Apache License, Version 2.0 (the "License");
+//- you may not use this file except in compliance with the License.
+//- You may obtain a copy of the License at
+ 
+//-     http://www.apache.org/licenses/LICENSE-2.0
+ 
+//- Unless required by applicable law or agreed to in writing, software
+//- distributed under the License is distributed on an "AS IS" BASIS,
+//- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//- See the License for the specific language governing permissions and
+//- limitations under the License. 
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    link(rel="shortcut icon", href="/favicon.ico")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="theme-color", content="#000000")  
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='menu_script.js')
+
+    title="Nearby Now"
+    block styles
+      link(rel='stylesheet', href='/stylesheets/main.css')
+    block scripts
+
+    
+
+  nav
+    div
+      i(class='fa fa-bars')
+    ul
+      li
+        a home
+      li
+        a about
+      li
+        a service
+      li
+        a contact
+
+  body
+    div(class="cocoon")
+    block layout-content
+      div.View
+        img(src='https://github.com/lucylow/nearby_now/blob/main/assets/Screen%20Shot%202021-11-20%20at%205.05.50%20PM.png?raw=true')
+        div.Message
+          div.Title
+            h3 Buy now. Pay later.
+
+      include includes/header.pug
+      block content
+
+footer
+  .column
+    h3 About Us
+    p Integrates seamlessly with popular apps for independent businesses to drive sales conversion. Drive sales conversion with our beautiful, mobile-friendly restaurant checkout website. Sell anywhere and in any way your customers want to buy.
+  .column
+    h3 For Food Customers
+    ul
+      li
+        a(href='#') Sign up 
+      li
+        a(href='#') Loyalty Rewards
+      li
+        a(href='#') Buy Now 
+      li
+        a(href='#') Pay Later 
+  .column
+    h3 For Restaurants
+    ul
+      li
+        a(href='#') Sign Up
+      li
+
+      a(href='#') Add Square
+
+      li
+        a(href='#') Process Sales
+
+      li
+        a(href='#')  Conversions
+  .column
+    h3 Subscribe for Loyalty Rewards
+    form(action='')
+      input(type='text')
+      button(type='button') Subscribe
+.bottom
+  p &copy; NearBy Now 2021
